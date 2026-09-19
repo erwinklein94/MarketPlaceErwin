@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#171a1d">
+  <meta name="description" content="ML Gestor — gestão privada de produtos, estoque, vendas e rentabilidade.">
+  <title>ML Gestor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <main id="login-view" class="login-view hidden">
+    <section class="login-card">
+      <div class="brand-mark">M</div>
+      <p class="eyebrow">ACESSO PRIVADO</p>
+      <h1>Bem-vindo ao<br>ML Gestor.</h1>
+      <p class="muted">Controle produtos, margem, estoque e vendas em um só lugar.</p>
+      <form id="login-form" class="stack-form">
+        <label>E-mail<input name="email" type="email" value="erwinklein1994@gmail.com" autocomplete="username" required></label>
+        <label>Senha<input name="password" type="password" autocomplete="current-password" required></label>
+        <button class="btn primary" type="submit">Entrar no sistema</button>
+      </form>
+      <p id="login-message" class="form-message"></p>
+    </section>
+    <aside class="login-aside">
+      <div class="orb"></div><div class="login-preview">
+        <span class="pill dark">Margem saudável</span>
+        <strong>R$ 12.840,00</strong><small>lucro líquido projetado</small>
+        <div class="mini-bars"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      </div>
+    </aside>
+  </main>
+
+  <div id="app" class="app hidden">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">M</span><div><strong>ML Gestor</strong><small>Marketplace OS</small></div></div>
+      <nav id="nav" aria-label="Navegação principal"></nav>
+      <div class="sidebar-bottom"><div class="user-mini"><span>EK</span><div><strong>Erwin Klein</strong><small>Administrador</small></div></div><button id="logout" class="icon-btn" title="Sair">↗</button></div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar">
+        <button id="menu-toggle" class="icon-btn mobile-only" aria-label="Abrir menu">☰</button>
+        <div><p class="eyebrow" id="breadcrumb">VISÃO GERAL</p><h1 id="page-title">Dashboard</h1></div>
+        <div class="top-actions"><label class="search">⌕ <input id="global-search" placeholder="Buscar no sistema"></label><button class="icon-btn" title="Notificações">◌<b></b></button><button class="avatar">EK</button></div>
+      </header>
+      <section id="content" class="content" tabindex="-1"></section>
+    </div>
+  </div>
+  <dialog id="modal"><form method="dialog" class="modal-shell"><button class="modal-close" value="cancel">×</button><div id="modal-content"></div></form></dialog>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.57.4/dist/umd/supabase.min.js"></script>
+  <script type="module" src="js/app.js?v=2"></script>
+</body>
+</html>
