@@ -20,7 +20,7 @@
       <h1>Bem-vindo ao<br>ML Gestor.</h1>
       <p class="muted">Controle produtos, margem, estoque e vendas em um só lugar.</p>
       <form id="login-form" class="stack-form">
-        <label>E-mail<input name="email" type="email" value="erwinklein1994@gmail.com" autocomplete="username" required></label>
+        <label>Correio eletrônico<input name="email" type="email" value="erwinklein1994@gmail.com" autocomplete="username" required></label>
         <label>Senha<input name="password" type="password" autocomplete="current-password" required></label>
         <button class="btn primary" type="submit">Entrar no sistema</button>
       </form>
@@ -37,14 +37,14 @@
 
   <div id="app" class="app hidden">
     <aside class="sidebar">
-      <div class="brand"><span class="brand-mark">M</span><div><strong>ML Gestor</strong><small>Marketplace OS</small></div></div>
+      <div class="brand"><span class="brand-mark">M</span><div><strong>ML Gestor</strong><small>Sistema de Vendas</small></div></div>
       <nav id="nav" aria-label="Navegação principal"></nav>
       <div class="sidebar-bottom"><div class="user-mini"><span>EK</span><div><strong>Erwin Klein</strong><small>Administrador</small></div></div><button id="logout" class="icon-btn" title="Sair">↗</button></div>
     </aside>
     <div class="workspace">
       <header class="topbar">
         <button id="menu-toggle" class="icon-btn mobile-only" aria-label="Abrir menu">☰</button>
-        <div><p class="eyebrow" id="breadcrumb">VISÃO GERAL</p><h1 id="page-title">Dashboard</h1></div>
+        <div><p class="eyebrow" id="breadcrumb">VISÃO GERAL</p><h1 id="page-title">Painel geral</h1></div>
         <div class="top-actions"><label class="search">⌕ <input id="global-search" placeholder="Buscar no sistema"></label><button class="icon-btn" title="Notificações">◌<b></b></button><button class="avatar">EK</button></div>
       </header>
       <section id="content" class="content" tabindex="-1"></section>
@@ -52,6 +52,6 @@
   </div>
   <dialog id="modal"><form method="dialog" class="modal-shell"><button class="modal-close" value="cancel">×</button><div id="modal-content"></div></form></dialog>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.57.4/dist/umd/supabase.min.js"></script>
-  <script type="module" src="js/app.js?v=5"></script>
+  <script type="module" src="js/app.js?v=7"></script>
 </body>
 </html>
